@@ -1,0 +1,30 @@
+## - A simulation of Sputnik-1's orbit?
+## Orbital Mechanics
+
+### Key Parameters
+- **Semi-major axis**: 6,955 km
+- **Apogee**: 947 km
+- **Perigee**: 228 km
+- **Orbital period**: 96.2 minutes
+- **Inclination**: 65.1°
+
+### Simulation Components
+1. **Orbital propagator** - Calculate position using two-body problem
+2. **Ground track calculator** - Project satellite path on Earth's surface
+3. **Visualization** - 3D orbital display with Earth reference frame
+
+### Example Implementation
+```python
+import math
+
+class Sputnik1Simulator:
+    def __init__(self):
+        self.semi_major_axis = 6955000  # meters
+        self.eccentricity = 0.0514
+        self.inclination = math.radians(65.1)
+    
+    def orbital_period(self):
+        """Calculate orbital period in seconds"""
+        mu = 3.986e14  # Earth's gravitational parameter
+        return 2 * math.pi * math.sqrt(self.semi_major_axis**3 / mu)
+```
