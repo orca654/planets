@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Planets
+message: Please ignore this repository.
+type: software
+authors:
+  - given-names: Kansas
+    family-names: Wildcat
+    email: mclee2@gmail.com
+    name-particle: Alex
+    affiliation: UCI
+identifiers:
+  - type: url
+    value: 'https://github.com/orca654/planets/'
+repository-code: 'https://github.com/orca654/planets'
+abstract: A test only site
+keywords:
+  - Test
+  - Nonsense
+license: CC-BY-SA-4.0
